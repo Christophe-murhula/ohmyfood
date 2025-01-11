@@ -10,7 +10,84 @@
 </head>
 
 <body>
+    <header>
+        <!-- icon only not visible on home page -->
+        <i class="fa-solid fa-arrow-left"></i>
+        <h1>OhMyFood</h1>
+    </header>
 
+    <section>
+        <div class="container">
+            <div class="location">
+                <!-- displaying the location just after the header -->
+                <i class="location__icon fa-solid fa-location"></i>
+                <p>Canada, Montreal</p>
+            </div>
+
+            <div class="heroHeader">
+                <div class="heroHeader__text">
+                    <h2>Book a menu that suits you</h2>
+                    <p>Discover exceptional restaurants, selected by us.</p>
+                </div>
+                <!-- CTA beside -->
+                <button class="heroHeader__cta">Explore our restaurants</button>
+            </div>
+
+            <div class="working">
+                <h2>How it works</h2>
+
+                <div class="working__steps">
+                    <div class="working__step">
+                        <i class="working__icon fa-solid fa-search"></i>
+                        <p>Choose your restaurant</p>
+                        <!-- an after element is added in css, and is positionned on left in the website -->
+                    </div>
+                    <div class="working__step">
+                        <i class="working__icon fa-solid fa-bookmark"></i>
+                        <p>Build up your menu</p>
+                    </div>
+                    <div class="working__step">
+                        <i class="working__icon fa-solid fa-truck"></i>
+                        <p>Enjoy at the restaurant.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant">
+                <h2>Restaurants</h2>
+
+                <div>
+                    <div class="restaurant__card">
+                        <img src="static/img/restaurant1.jpg" alt="restaurant1">
+                        <div class="restaurant__card__text">
+                            <h3>The palette of tastes</h3>
+                            <p>Menilmontant</p>
+                            <!-- icons that gonna be animated to get the wanted effect -->
+                            <div class="restaurant__card__icons">
+                                <i claas="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <h3>ohmyfood</h3>
+
+        <div class="footer__details">
+            <div><i class=""></i> Propose a restaurant</div>
+            <div><i class=""></i> Become a partnair</div>
+            <p>Legal mentions</p>
+            <p>Contact</p>
+        </div>
+    </footer>
+
+    <!-- font awesome icons JS -->
+    <script src="https://kit.fontawesome.com/541bb7a8f6.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
