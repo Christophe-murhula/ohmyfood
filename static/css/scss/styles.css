@@ -51,6 +51,14 @@ header i {
 .heroHeader__text h2 {
   width: 85%;
 }
+.heroHeader__cta {
+  background: linear-gradient(335deg, #9356dc, #ff79da);
+  border: 0px;
+  border-radius: 30px;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+}
 
 .working {
   padding: 3rem 1rem;

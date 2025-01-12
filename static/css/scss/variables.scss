@@ -20,3 +20,12 @@ $big-spacing: 3rem;
 $min-radius: 5px;
 $medium-radius: 10px;
 $big-radius: 15px;
+
+@mixin cta {
+  background: linear-gradient(335deg, $main-color, $secondary-color);
+  border: 0px;
+  border-radius: $big-radius * 2;
+  color: white;
+  padding: $small-spacing $big-spacing;
+  font-size: $p-size - 0.25rem;
+}

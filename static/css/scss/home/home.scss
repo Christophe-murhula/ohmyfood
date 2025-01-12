@@ -20,6 +20,10 @@
       width: 85%;
     }
   }
+
+  &__cta {
+    @include cta;
+  }
 }
 
 .working {
