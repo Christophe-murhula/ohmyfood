@@ -41,8 +41,23 @@ $location-bg-color: #eaeaea;
   font-weight: 800;
 }
 
-footer {
+.footer {
   background-color: $footer-bg-color;
   color: white;
   padding: $small-spacing;
+
+  h3 {
+    font-family: $logo-titles-font;
+    font-weight: 500;
+    margin-bottom: $small-spacing;
+  }
+  div,
+  p {
+    margin-bottom: $min-spacing;
+    font-size: $p-size - 0.25rem;
+  }
+  &__details div {
+    display: flex;
+    gap: $min-spacing;
+  }
 }

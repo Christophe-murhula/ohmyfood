@@ -104,8 +104,22 @@ body {
   font-weight: 800;
 }
 
-footer {
+.footer {
   background-color: #353535;
   color: white;
   padding: 1rem;
+}
+.footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.footer div,
+.footer p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+.footer__details div {
+  display: flex;
+  gap: 0.5rem;
 }/*# sourceMappingURL=styles.css.map */
