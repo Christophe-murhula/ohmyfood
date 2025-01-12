@@ -1,0 +1,20 @@
+@import "../../variables.scss";
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: $min-spacing 0;
+
+  h1 {
+    font-family: $logo-titles-font;
+    font-size: $h1-size;
+  }
+
+  i {
+    position: absolute;
+    left: 2%;
+  }
+}
