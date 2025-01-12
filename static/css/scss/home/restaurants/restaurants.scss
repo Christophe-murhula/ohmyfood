@@ -3,4 +3,17 @@
 .restaurant {
   background-color: $sections-bg-color;
   padding: $big-spacing $small-spacing;
+
+  &__card {
+    border-radius: $big-radius;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  &__card__text {
+    background-color: white;
+  }
 }

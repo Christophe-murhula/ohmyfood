@@ -1,4 +1,15 @@
 .restaurant {
   background-color: #f6f6f6;
   padding: 3rem 1rem;
+}
+.restaurant__card {
+  border-radius: 15px;
+}
+.restaurant__card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.restaurant__card__text {
+  background-color: white;
 }/*# sourceMappingURL=restaurants.css.map */
