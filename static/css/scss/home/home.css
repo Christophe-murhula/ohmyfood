@@ -1,11 +1,14 @@
 header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0;
   box-shadow: 0 3px 3px 0 #909090;
+  background-color: white;
 }
 header h1 {
   font-family: "Shrikhand", cursive;
@@ -51,7 +54,12 @@ header i {
   width: 85%;
 }
 .heroHeader__cta {
-  background: linear-gradient(90deg, #9356dc, #ff79da);
+  background: linear-gradient(335deg, #9356dc, #ff79da);
+  border: 0px;
+  border-radius: 30px;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1rem;
 }
 
 .working {
