@@ -28,4 +28,24 @@
 
 .working {
   padding: $big-spacing $small-spacing;
+
+  &__step {
+    display: flex;
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      gap: $small-spacing;
+    }
+
+    &--1,
+    &--2,
+    &--3 {
+      background-color: $sections-bg-color;
+      padding: $medium-spacing $big-spacing;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: $medium-spacing;
+      border-radius: $big-radius + 10px;
+    }
+  }
 }

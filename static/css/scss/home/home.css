@@ -54,7 +54,7 @@ header i {
   width: 85%;
 }
 .heroHeader__cta {
-  background: linear-gradient(335deg, #9356dc, #ff79da);
+  background: linear-gradient(350deg, #9356dc, #ff79da);
   border: 0px;
   border-radius: 30px;
   color: white;
@@ -64,4 +64,22 @@ header i {
 
 .working {
   padding: 3rem 1rem;
+}
+.working__step {
+  display: flex;
+}
+@media only screen and (max-width: 600px) {
+  .working__step {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.working__step--1, .working__step--2, .working__step--3 {
+  background-color: #f6f6f6;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 25px;
 }/*# sourceMappingURL=home.css.map */
