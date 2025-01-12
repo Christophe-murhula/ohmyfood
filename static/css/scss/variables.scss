@@ -3,13 +3,14 @@ $main-color: #9356dc;
 $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 $sections-bg-color: #f6f6f6;
+$footer-bg-color: #353535;
 $logo-titles-font: "Shrikhand", cursive;
 $text-font: "Roboto", sans-serif;
 //SIZES
-$h1-size: 1.5rem;
-$h2-size: 1.25rem;
-$h3-size: 1rem;
-$p-size: 1rem;
+$h1-size: 2rem;
+$h2-size: $h1-size - 0.25rem;
+$h3-size: 1.5rem;
+$p-size: 1.25rem;
 //SPACING
 $min-spacing: 0.5rem;
 $small-spacing: 1rem;

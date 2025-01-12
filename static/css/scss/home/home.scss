@@ -6,17 +6,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: $big-spacing 0;
+  padding: $big-spacing $small-spacing;
   background-color: $sections-bg-color;
   text-align: center;
 
   &__text {
     margin-bottom: $medium-spacing;
-  }
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-h2 {
-  margin-bottom: $min-spacing;
+    h2 {
+      width: 85%;
+    }
+  }
 }
 
 .working {

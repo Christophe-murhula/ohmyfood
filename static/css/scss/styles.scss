@@ -8,6 +8,22 @@
   padding: 0;
 }
 
+h1 {
+  font-size: $h1-size;
+  font-weight: 500;
+}
+h2 {
+  font-size: $h2-size;
+  margin-bottom: $min-spacing;
+  font-weight: bold;
+}
+h3 {
+  font-size: $h3-size;
+}
+p {
+  font-weight: 300;
+}
+
 body {
   font-family: $text-font;
   font-size: $p-size;
@@ -23,4 +39,10 @@ $location-bg-color: #eaeaea;
   gap: $small-spacing;
   padding: $small-spacing 0;
   font-weight: 800;
+}
+
+footer {
+  background-color: $footer-bg-color;
+  color: white;
+  padding: $small-spacing;
 }

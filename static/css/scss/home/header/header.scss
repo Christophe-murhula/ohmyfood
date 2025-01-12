@@ -7,10 +7,11 @@ header {
   justify-content: center;
   align-items: center;
   padding: $min-spacing 0;
+  //box shadow
+  box-shadow: 0 3px 3px 0 darken($sections-bg-color, 40%);
 
   h1 {
     font-family: $logo-titles-font;
-    font-size: $h1-size;
   }
 
   i {

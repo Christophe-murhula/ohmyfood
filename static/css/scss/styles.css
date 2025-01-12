@@ -6,10 +6,10 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0;
+  box-shadow: 0 3px 3px 0 #909090;
 }
 header h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 1.5rem;
 }
 header i {
   position: absolute;
@@ -38,16 +38,18 @@ header i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   background-color: #f6f6f6;
   text-align: center;
 }
 .heroHeader__text {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-h2 {
-  margin-bottom: 0.5rem;
+.heroHeader__text h2 {
+  width: 85%;
 }
 
 .working {
@@ -59,9 +61,28 @@ h2 {
   padding: 0;
 }
 
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 300;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .location {
@@ -73,4 +94,10 @@ body {
   gap: 1rem;
   padding: 1rem 0;
   font-weight: 800;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 1rem;
 }/*# sourceMappingURL=styles.css.map */

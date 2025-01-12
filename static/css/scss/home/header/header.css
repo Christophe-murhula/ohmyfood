@@ -5,10 +5,10 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0;
+  box-shadow: 0 3px 3px 0 #909090;
 }
 header h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 1.5rem;
 }
 header i {
   position: absolute;
