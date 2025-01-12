@@ -21,6 +21,7 @@ header i {
 }
 .restaurant__card {
   border-radius: 15px;
+  overflow: hidden;
 }
 .restaurant__card img {
   -o-object-fit: cover;

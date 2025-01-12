@@ -6,6 +6,7 @@
 
   &__card {
     border-radius: $big-radius;
+    overflow: hidden;
 
     img {
       object-fit: cover;
