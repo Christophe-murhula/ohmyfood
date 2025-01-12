@@ -71,10 +71,13 @@ header i {
 @media only screen and (max-width: 600px) {
   .working__step {
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
   }
 }
 .working__step--1, .working__step--2, .working__step--3 {
+  position: relative;
+  width: 65%;
   background-color: #f6f6f6;
   padding: 2rem 3rem;
   display: flex;
@@ -82,4 +85,47 @@ header i {
   align-items: center;
   gap: 2rem;
   border-radius: 25px;
+}
+.working__step--1 p, .working__step--2 p, .working__step--3 p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.working__step--1::after {
+  content: "1";
+  text-align: center;
+  align-content: center;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  width: 8%;
+  height: 35%;
+  position: absolute;
+  left: -4%;
+}
+.working__step--2::after {
+  content: "2";
+  text-align: center;
+  align-content: center;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  width: 8%;
+  height: 35%;
+  position: absolute;
+  left: -4%;
+}
+.working__step--3::after {
+  content: "3";
+  text-align: center;
+  align-content: center;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  width: 8%;
+  height: 35%;
+  position: absolute;
+  left: -4%;
 }/*# sourceMappingURL=home.css.map */
