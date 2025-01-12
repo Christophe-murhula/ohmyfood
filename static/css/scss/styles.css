@@ -55,7 +55,7 @@ header i {
   width: 85%;
 }
 .heroHeader__cta {
-  background: linear-gradient(335deg, #9356dc, #ff79da);
+  background: linear-gradient(350deg, #9356dc, #ff79da);
   border: 0px;
   border-radius: 30px;
   color: white;
@@ -79,7 +79,7 @@ h1 {
 
 h2 {
   font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-weight: bold;
 }
 

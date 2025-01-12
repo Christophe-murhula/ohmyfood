@@ -22,7 +22,7 @@ $medium-radius: 10px;
 $big-radius: 15px;
 
 @mixin cta {
-  background: linear-gradient(335deg, $main-color, $secondary-color);
+  background: linear-gradient(350deg, $main-color, $secondary-color);
   border: 0px;
   border-radius: $big-radius * 2;
   color: white;
