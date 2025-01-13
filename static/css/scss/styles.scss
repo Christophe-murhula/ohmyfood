@@ -63,11 +63,29 @@ $location-bg-color: #eaeaea;
   color: white;
   padding: $small-spacing;
 
+  //tablet
+  @include medium_screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   h3 {
     font-family: $logo-titles-font;
     font-weight: 500;
     margin-bottom: $small-spacing;
   }
+
+  //tablet
+  @include medium_screen {
+    &__details {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
   div,
   p {
     margin-bottom: $min-spacing;
