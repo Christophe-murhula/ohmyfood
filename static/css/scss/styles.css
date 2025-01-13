@@ -40,6 +40,12 @@ header i {
     grid-template-columns: calc(50% - 0.5rem) calc(50% - 0.5rem);
   }
 }
+@media only screen and (min-width: 1200px) {
+  .restaurant > div {
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - 0.75rem));
+  }
+}
 .restaurant__card {
   border-radius: 15px;
   overflow: hidden;
@@ -54,6 +60,11 @@ header i {
 @media only screen and (min-width: 600px) {
   .restaurant__card img {
     height: 30vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .restaurant__card img {
+    height: 15vw;
   }
 }
 .restaurant__card__details {
