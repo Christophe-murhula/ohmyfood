@@ -32,6 +32,11 @@
     border-radius: $big-radius;
     overflow: hidden;
     box-shadow: 0.1rem 0.1rem 0.5rem 0px darken($sections-bg-color, 40%);
+    transition: transform 0.2s ease-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     img {
       object-fit: cover;
