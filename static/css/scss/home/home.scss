@@ -65,6 +65,7 @@
       align-items: center;
       gap: $medium-spacing;
       border-radius: $big-radius + 10px;
+      box-shadow: 0.1rem 0.1rem 0.5rem 0px darken($sections-bg-color, 30%);
 
       p {
         font-size: $p-size - 0.25rem;

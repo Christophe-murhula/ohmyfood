@@ -29,6 +29,10 @@ body {
   font-size: $p-size;
 }
 
+.container {
+  margin-top: 3.9rem; //header height to avoid overlapping
+}
+
 $location-bg-color: #eaeaea;
 .location {
   background-color: $location-bg-color;

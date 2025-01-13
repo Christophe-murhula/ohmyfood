@@ -12,6 +12,7 @@ header {
   //box shadow & bg color
   box-shadow: 0 3px 3px 0 darken($sections-bg-color, 40%);
   background-color: white;
+  z-index: 2;
 
   h1 {
     font-family: $logo-titles-font;

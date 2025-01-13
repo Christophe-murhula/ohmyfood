@@ -9,6 +9,7 @@ header {
   padding: 0.5rem 0;
   box-shadow: 0 3px 3px 0 #909090;
   background-color: white;
+  z-index: 2;
 }
 header h1 {
   font-family: "Shrikhand", cursive;
