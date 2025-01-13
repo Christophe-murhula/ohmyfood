@@ -75,6 +75,7 @@ header i {
   color: white;
   padding: 1rem 3rem;
   font-size: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem 0px #aaaaaa;
 }
 
 .working {
@@ -82,6 +83,14 @@ header i {
 }
 .working__step {
   display: flex;
+}
+@media only screen and (min-width: 600px) {
+  .working__step {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 0 0.5rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .working__step {
@@ -101,6 +110,12 @@ header i {
   gap: 2rem;
   border-radius: 25px;
   box-shadow: 0.1rem 0.1rem 0.5rem 0px #aaaaaa;
+}
+@media only screen and (min-width: 600px) {
+  .working__step--1, .working__step--2, .working__step--3 {
+    padding: 1rem 2rem;
+    border-radius: 15px;
+  }
 }
 .working__step--1 p, .working__step--2 p, .working__step--3 p {
   font-size: 1rem;

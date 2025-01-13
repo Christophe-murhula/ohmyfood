@@ -21,6 +21,13 @@ $min-radius: 5px;
 $medium-radius: 10px;
 $big-radius: 15px;
 
+@mixin medium_screen {
+  @media only screen and (min-width: 600px) {
+    //with medium scree, sizes are reduced by 0.25rem and spacing divided by 1.5
+    @content;
+  }
+}
+
 @mixin cta {
   background: linear-gradient(350deg, $main-color, $secondary-color);
   border: 0px;

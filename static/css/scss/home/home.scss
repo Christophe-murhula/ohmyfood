@@ -47,6 +47,14 @@
 
   &__step {
     display: flex;
+    //tablets
+    @include medium_screen {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: $medium-spacing;
+      margin: 0 0.5rem;
+    }
+    //mobile phones
     @media only screen and (max-width: 600px) {
       flex-direction: column;
       align-items: center;
@@ -66,6 +74,11 @@
       gap: $medium-spacing;
       border-radius: $big-radius + 10px;
       box-shadow: 0.1rem 0.1rem 0.5rem 0px darken($sections-bg-color, 30%);
+      //tablets
+      @include medium_screen {
+        padding: $small-spacing $medium-spacing;
+        border-radius: $big-radius;
+      }
 
       p {
         font-size: $p-size - 0.25rem;

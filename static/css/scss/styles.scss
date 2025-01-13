@@ -11,14 +11,24 @@
 h1 {
   font-size: $h1-size;
   font-weight: 500;
+  @include medium_screen {
+    font-size: $h1-size - 0.25rem;
+  }
 }
 h2 {
   font-size: $h2-size;
   margin-bottom: $small-spacing;
   font-weight: bold;
+  @include medium_screen {
+    font-size: $h2-size - 0.25rem;
+    margin-bottom: $small-spacing / 1.5;
+  }
 }
 h3 {
   font-size: $h3-size;
+  @include medium_screen {
+    font-size: $h3-size - 0.25rem;
+  }
 }
 p {
   font-weight: 300;
@@ -27,6 +37,9 @@ p {
 body {
   font-family: $text-font;
   font-size: $p-size;
+  @include medium_screen {
+    font-size: $p-size - 0.25rem;
+  }
 }
 
 .container {
