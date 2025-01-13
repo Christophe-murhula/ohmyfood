@@ -81,10 +81,27 @@ header i {
   font-size: 1rem;
 }
 .restaurant__card__details__icons {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: 1.75rem;
+}
+.restaurant__card__details__icons .fa-regular {
+  position: absolute;
+  transition: color 50ms ease-in-out;
+}
+.restaurant__card__details__icons .fa-solid {
+  color: transparent;
+  background: linear-gradient(#9356dc, #ff79da) text;
+  transform: scale(0);
+  transition: transform 250ms 50ms ease-in;
+}
+.restaurant__card__details__icons:hover .fa-solid {
+  transform: scale(1);
+}
+.restaurant__card__details__icons:hover .fa-regular {
+  color: #9356dc;
 }
 
 .heroHeader {
@@ -113,6 +130,12 @@ header i {
   padding: 1rem 3rem;
   font-size: 1rem;
   box-shadow: 0.1rem 0.1rem 0.5rem 0px #aaaaaa;
+  transition: all 0.3s ease-in-out;
+}
+.heroHeader__cta:active {
+  transform: translateY(0.1rem);
+  box-shadow: 0.1rem 0.1rem 0.5rem 0px #909090;
+  opacity: 0.8;
 }
 
 .working {
@@ -136,6 +159,9 @@ header i {
     gap: 2rem;
     margin: 0 0.5rem;
   }
+}
+.working__step i {
+  transition: color 0.2s 0.1s ease-in-out;
 }
 .working__step--1, .working__step--2, .working__step--3 {
   position: relative;
@@ -174,6 +200,12 @@ header i {
     font-size: 1.1rem;
   }
 }
+.working__step--1:hover::after, .working__step--2:hover::after, .working__step--3:hover::after {
+  opacity: 0.2;
+}
+.working__step--1:hover i, .working__step--2:hover i, .working__step--3:hover i {
+  color: #9356dc;
+}
 .working__step--1::before {
   content: "1";
   text-align: center;
@@ -186,6 +218,24 @@ header i {
   height: 35%;
   position: absolute;
   left: -4%;
+}
+.working__step--1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #9356dc;
+  border-radius: 25px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+@media only screen and (min-width: 600px) {
+  .working__step--1::after {
+    border-radius: 15px;
+  }
 }
 .working__step--2::before {
   content: "2";
@@ -200,6 +250,24 @@ header i {
   position: absolute;
   left: -4%;
 }
+.working__step--2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #9356dc;
+  border-radius: 25px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+@media only screen and (min-width: 600px) {
+  .working__step--2::after {
+    border-radius: 15px;
+  }
+}
 .working__step--3::before {
   content: "3";
   text-align: center;
@@ -212,6 +280,24 @@ header i {
   height: 35%;
   position: absolute;
   left: -4%;
+}
+.working__step--3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #9356dc;
+  border-radius: 25px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+@media only screen and (min-width: 600px) {
+  .working__step--3::after {
+    border-radius: 15px;
+  }
 }
 
 * {

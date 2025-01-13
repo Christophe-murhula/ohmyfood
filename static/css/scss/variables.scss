@@ -42,4 +42,10 @@ $big-radius: 15px;
   padding: $small-spacing $big-spacing;
   font-size: $p-size - 0.25rem;
   box-shadow: 0.1rem 0.1rem 0.5rem 0px darken($sections-bg-color, 30%);
+  transition: all 0.3s ease-in-out;
+}
+@mixin cta-active {
+  transform: translateY(0.1rem);
+  box-shadow: 0.1rem 0.1rem 0.5rem 0px darken($sections-bg-color, 40%);
+  opacity: 0.8;
 }

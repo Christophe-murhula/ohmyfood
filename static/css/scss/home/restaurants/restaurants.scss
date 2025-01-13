@@ -63,10 +63,32 @@
       font-size: $p-size - 0.25rem;
     }
     &__icons {
+      position: relative;
       display: flex;
       flex-direction: row;
       align-items: center;
       font-size: $h2-size;
+
+      & .fa-regular {
+        position: absolute;
+        transition: color 50ms ease-in-out;
+      }
+
+      & .fa-solid {
+        color: transparent;
+        background: linear-gradient($main-color, $secondary-color) text;
+        transform: scale(0);
+        transition: transform 250ms 50ms ease-in;
+      }
+
+      &:hover {
+        .fa-solid {
+          transform: scale(1);
+        }
+        .fa-regular {
+          color: $main-color;
+        }
+      }
     }
   }
 }

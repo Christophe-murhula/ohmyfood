@@ -23,6 +23,10 @@
 
   &__cta {
     @include cta;
+
+    &:active {
+      @include cta-active;
+    }
   }
 }
 
@@ -40,6 +44,25 @@
   //positioning
   position: absolute;
   left: -4%;
+}
+
+@mixin step_hover_effect {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: $main-color;
+  border-radius: $big-radius + 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  //tablets
+  @include medium_screen {
+    border-radius: $big-radius;
+  }
 }
 
 .working {
@@ -60,6 +83,10 @@
       justify-content: space-between;
       gap: $medium-spacing;
       margin: 0 0.5rem;
+    }
+
+    i {
+      transition: color 0.2s 0.1s ease-in-out;
     }
 
     &--1,
@@ -98,11 +125,22 @@
           font-size: $p-size - 0.15rem;
         }
       }
+
+      &:hover::after {
+        opacity: 0.2;
+      }
+      &:hover i {
+        color: $main-color;
+      }
     }
 
     @for $i from 1 through 3 {
       &--#{$i}::before {
         @include step_number($i);
+      }
+
+      &--#{$i}::after {
+        @include step_hover_effect;
       }
     }
   }

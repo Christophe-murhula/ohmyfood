@@ -59,8 +59,25 @@
   font-size: 1rem;
 }
 .restaurant__card__details__icons {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: 1.75rem;
+}
+.restaurant__card__details__icons .fa-regular {
+  position: absolute;
+  transition: color 50ms ease-in-out;
+}
+.restaurant__card__details__icons .fa-solid {
+  color: transparent;
+  background: linear-gradient(#9356dc, #ff79da) text;
+  transform: scale(0);
+  transition: transform 250ms 50ms ease-in;
+}
+.restaurant__card__details__icons:hover .fa-solid {
+  transform: scale(1);
+}
+.restaurant__card__details__icons:hover .fa-regular {
+  color: #9356dc;
 }/*# sourceMappingURL=restaurants.css.map */
