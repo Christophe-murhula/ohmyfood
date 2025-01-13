@@ -174,7 +174,7 @@ header i {
     font-size: 1.1rem;
   }
 }
-.working__step--1::after {
+.working__step--1::before {
   content: "1";
   text-align: center;
   align-content: center;
@@ -187,7 +187,7 @@ header i {
   position: absolute;
   left: -4%;
 }
-.working__step--2::after {
+.working__step--2::before {
   content: "2";
   text-align: center;
   align-content: center;
@@ -200,7 +200,7 @@ header i {
   position: absolute;
   left: -4%;
 }
-.working__step--3::after {
+.working__step--3::before {
   content: "3";
   text-align: center;
   align-content: center;

@@ -101,7 +101,7 @@
     }
 
     @for $i from 1 through 3 {
-      &--#{$i}::after {
+      &--#{$i}::before {
         @include step_number($i);
       }
     }
