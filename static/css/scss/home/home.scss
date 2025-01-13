@@ -44,21 +44,22 @@
 
 .working {
   padding: $big-spacing $small-spacing;
+  //desktop
+  @include big_screen {
+    padding: $big-spacing $big-spacing;
+  }
 
   &__step {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $small-spacing;
     //tablets
     @include medium_screen {
       flex-direction: row;
       justify-content: space-between;
       gap: $medium-spacing;
       margin: 0 0.5rem;
-    }
-    //mobile phones
-    @media only screen and (max-width: 600px) {
-      flex-direction: column;
-      align-items: center;
-      gap: $small-spacing;
     }
 
     &--1,
@@ -79,10 +80,23 @@
         padding: $small-spacing $medium-spacing;
         border-radius: $big-radius;
       }
+      //desktop
+      @include big_screen {
+        padding: $medium-spacing $big-spacing;
+      }
 
       p {
         font-size: $p-size - 0.25rem;
         font-weight: bold;
+
+        //tablets
+        @include medium_screen {
+          font-size: $p-size - 0.55rem;
+        }
+        //desktop
+        @include big_screen {
+          font-size: $p-size - 0.15rem;
+        }
       }
     }
 

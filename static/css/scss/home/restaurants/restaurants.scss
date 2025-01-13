@@ -3,6 +3,24 @@
 .restaurant {
   background-color: $sections-bg-color;
   padding: $big-spacing $small-spacing;
+  //desktop
+  @include big_screen {
+    padding: $big-spacing $big-spacing;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: $small-spacing;
+
+    @include medium_screen {
+      display: grid;
+      //the calculs are to avoid overlapping
+      grid-template-columns: calc(50% - #{$small-spacing / 2}) calc(
+          50% - #{$small-spacing / 2}
+        );
+    }
+  }
 
   &__card {
     border-radius: $big-radius;
@@ -12,6 +30,11 @@
     img {
       object-fit: cover;
       width: 100%;
+      max-height: 45vw;
+
+      @include medium_screen {
+        height: 30vw;
+      }
     }
   }
 
@@ -23,7 +46,10 @@
     padding: $small-spacing;
 
     &__text h3 {
-      margin-bottom: $min-spacing;
+      font-size: $h3-size - 0.25rem;
+    }
+    &__text p {
+      font-size: $p-size - 0.25rem;
     }
     &__icons {
       display: flex;

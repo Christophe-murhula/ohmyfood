@@ -27,6 +27,12 @@ $big-radius: 15px;
     @content;
   }
 }
+@mixin big_screen {
+  @media only screen and (min-width: 1200px) {
+    //with medium scree, sizes are reduced by 0.25rem and spacing divided by 1.5
+    @content;
+  }
+}
 
 @mixin cta {
   background: linear-gradient(350deg, $main-color, $secondary-color);
