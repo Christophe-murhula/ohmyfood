@@ -16,7 +16,7 @@
     //tablet
     @include medium_screen {
       display: grid;
-      //the calculs are to avoid overlapping
+      //to avoid overlapping, we substract half of the spacing
       grid-template-columns: calc(50% - #{$small-spacing / 2}) calc(
           50% - #{$small-spacing / 2}
         );
