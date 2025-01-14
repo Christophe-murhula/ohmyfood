@@ -29,6 +29,7 @@
   }
 
   &__card {
+    position: relative;
     border-radius: $big-radius;
     overflow: hidden;
     box-shadow: 0.1rem 0.1rem 0.5rem 0px darken($sections-bg-color, 40%);
@@ -51,6 +52,18 @@
       @include big_screen {
         height: 15vw;
       }
+    }
+
+    &--new {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $tertiary-color;
+      color: darken($tertiary-color, 50%);
+      padding: $small-spacing;
+      font-size: $p-size - 0.25rem;
+      font-weight: bold;
+      border-bottom-right-radius: $big-radius;
     }
   }
 
